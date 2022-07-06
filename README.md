@@ -26,3 +26,6 @@ It might be easier to just try the service with Docker.
 - Create an ACS docker image: `docker build -t acs . --build-arg UBUNTU_VERSION=22.04`
 - Create a container with a running server: `docker run --rm --init --name acs-container acs`
 - Create a client in the same container and connect to the server: `docker exec acs-container client`
+
+## License
+ACS is MIT licensed, as found in the LICENSE file.
