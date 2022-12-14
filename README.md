@@ -1,10 +1,10 @@
-# Anonymous Credentials Service
-Anonymous Credentials Service (ACS) is a highly available, multitenant service that allows clients to authenticate in a de-identified manner. It enhances privacy and security while also being compute-conscious.
+# Anonymous Credential Service
+Anonymous Credential Service (ACS) is a highly available, multitenant service that allows clients to authenticate in a de-identified manner. It enhances privacy and security while also being compute-conscious.
 
 [How Meta enables de-identified authentication at scale](https://engineering.fb.com/2022/03/30/security/de-identified-authentication-at-scale)
 
 ## ACS library
-The Anonymous Credentials Service is built on top of VOPRFs (verifiable oblivious pseudorandom functions), blind signatures, and key derivation functions. A portable and extensible C library is provided in [`lib/`](lib/). See docstring or SimpleAnonCredService for examples.
+The Anonymous Credential Service is built on top of VOPRFs (verifiable oblivious pseudorandom functions), blind signatures, and key derivation functions. A portable and extensible C library is provided in [`lib/`](lib/). See docstring or SimpleAnonCredService for examples.
 
 [libsodium](https://doc.libsodium.org/) is the only dependency for ACS library.
 
