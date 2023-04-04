@@ -59,8 +59,6 @@ static enum kdf_error derive_key_pair(
   }
 
   const unsigned char* primary_private_key_ptr = primary_key;
-  const unsigned char* primary_public_key_ptr =
-      primary_key + kdf->primary_private_key_bytes;
 
   // Hash attribute to scalar
   unsigned char attr_hash[scalar_bytes];

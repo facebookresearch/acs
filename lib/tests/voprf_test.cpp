@@ -81,7 +81,6 @@ struct VoprfTest
 
 TEST_P(VoprfTest, NotOnCurveTest) {
   unsigned char output_buffer[curve_.element_bytes];
-  unsigned char evaluated_element[curve_.element_bytes];
   unsigned char not_on_curve_element[curve_.element_bytes];
   unsigned char on_curve_element[curve_.element_bytes];
   unsigned char blinding_factor[curve_.scalar_bytes];
@@ -157,7 +156,6 @@ TEST_P(VoprfTest, NotOnCurveTest) {
 
 TEST_P(VoprfTest, BlindingTest) {
   unsigned char* token = (unsigned char*)"test";
-  unsigned char* token2 = (unsigned char*)"fake";
   const size_t token_len = 4;
 
   // blind
