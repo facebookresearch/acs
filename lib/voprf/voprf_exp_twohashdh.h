@@ -9,6 +9,10 @@
 
 #include "lib/voprf/voprf.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * (Double) Hashed Diffie-Hellman (two hash DH) implementations with
  * exponential blinding.
@@ -35,3 +39,7 @@
  */
 
 void voprf_exp_twohashdh_init(voprf_t* /* voprf */, curve_t* /* curve */);
+
+#ifdef __cplusplus
+}
+#endif
