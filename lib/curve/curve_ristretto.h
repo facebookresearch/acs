@@ -9,6 +9,10 @@
 
 #include "lib/curve/curve.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * Implementation for curve ristretto.
  * Example:
@@ -19,3 +23,7 @@
  */
 
 void curve_ristretto_init(curve_t* /* curve */);
+
+#ifdef __cplusplus
+}
+#endif
