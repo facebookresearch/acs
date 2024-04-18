@@ -172,7 +172,7 @@ TEST_P(KdfTest, ProofTest) {
           attribute_len_arr),
       KDF_SUCCESS);
 
-  if (pk_proof_len > 0 && pk_proof != NULL) {
+  if (pk_proof_len > 0) {
     // pass another attribute array, verification should fail
     EXPECT_EQ(
         kdf_.verify_public_key(
